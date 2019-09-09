@@ -1,5 +1,5 @@
 {
-    "name": "js-bridge",
+    "name": "bfo-jsbridge",
     "version": "1.0.0",
     "description": "搜狗-BFO-JS-Bridge-SDK，JS部分。",
     "main": "index.js",
@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "grunt build"
     },
-    "keywords": [ "bfo", "js", "bridge" ],
+    "keywords": [ "bfo", "jsbridge" ],
     "author": "huai",
     "license": "ISC",
     "devDependencies": {
