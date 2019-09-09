@@ -1,6 +1,6 @@
 {
     "name": "bfo-jsbridge",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "BFO-JS-Bridge-SDK，JS部分。",
     "main": "index.js",
     "scripts": {
