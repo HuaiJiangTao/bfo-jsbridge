@@ -1,6 +1,6 @@
 /**
 * 2019-08-08 17:25
-* author: huaijiangtao@sogou-inc.com
+* author: 719349642@qq.com  huaijiangtao
 * 大前端JSbridge-H5&native 交互桥梁
 *
 */
