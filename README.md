@@ -1,1 +1,1 @@
-废除了，sorry
+废除了，sorry,新包见 bfo-jsbridge-sdk
