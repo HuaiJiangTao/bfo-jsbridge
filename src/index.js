@@ -1,10 +1,10 @@
 /**
-* 2019-08-08 17:25
+* 2019-09-16 17:25
 * author: 719349642@qq.com  huaijiangtao
 * 大前端JSbridge-H5&native 交互桥梁
 *
 */
-(function(name, initFunction) {
+(function(initFunction) {
     // 检测上下文环境是否为AMD或CMD
     var hasDefine = typeof define === 'function',
         // 检查上下文环境是否为Node
@@ -16,18 +16,19 @@
     } else if (hasExports) {
         // 定义为普通Node模块
         module.exports = initFunction();
-    } else {
-        // 将模块的执行结果挂在window变量中，在浏览器中this指向window对象
-        this[name] = initFunction();
     }
-})('_SG_BFO_callNativeMethod_', function() {
+})(function() {
     // 缓存客户端方法调用类
     var semobJSBridge = window.semobJSBridge;
 
     if (!semobJSBridge) {
         // 客户端方法调用类不存在，报错
         console.warn('[Error]:检测不到客户端类semobJSBridge。');
-        return;
+        return null;
+    }
+    // 避免重复注册方法
+    if (typeof window._SG_BFO_callNativeMethod_ == 'function') {
+        return window._SG_BFO_callNativeMethod_;
     }
     // 初始化callbackId
     var nextCallbackId = new Date().getTime() % (1000 * 60 * 60 * 24) * 10000;
@@ -109,5 +110,7 @@
     }
     // 将方法注册在客户端类上，供客户端回调JS传递返回值
     semobJSBridge && (semobJSBridge.callJSCallback = callJSCallback);
+    // 将模块的执行结果挂在window变量中，在浏览器中this指向window对象
+    window._SG_BFO_callNativeMethod_ = _SG_BFO_callNativeMethod_;
     return _SG_BFO_callNativeMethod_;
 })
