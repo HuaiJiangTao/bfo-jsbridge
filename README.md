@@ -7,7 +7,7 @@
 
 ```
 ├── dist // 打包压缩后文件目录
-│   └── index.js // 压缩后文件
+│   └── jsbridge.js // 压缩后文件
 │
 ├── src // 原代码目录
 │   └──index.js // 原代码入口目录
@@ -19,7 +19,7 @@
 
 ### npm run build 
 
-本地构建，在根目录`dist`下生成打包压缩文件`index.js`
+本地构建，在根目录`dist`下生成打包压缩文件`jsbridge.js`
 
 ## JS SDK接口文档说明
 JS SDK会暴露一个名为`_SG_BFO_callNativeMethod_`的方法，供H5页面调用客户端。

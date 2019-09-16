@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt);
     grunt.initConfig({
         clean: ['build'],
@@ -10,7 +10,7 @@ module.exports = function (grunt) {
             },
             jsbridge: {
                 files: {
-                    'dist/index.js': ['src/index.js']
+                    'dist/jsbridge.js': ['src/index.js']
                 }
             }
         }
