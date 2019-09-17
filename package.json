@@ -1,5 +1,5 @@
 {
-    "name": "bfo-jsbridge-sdk",
+    "name": "@bfo/jsbridge",
     "version": "1.0.0",
     "description": "bfo-jsbridge-sdk，JS部分。",
     "main": "index.js",
@@ -19,11 +19,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/HuaiJiangTao/bfo-jsbridge.git"
+        "url": "git+https://github.com/HuaiJiangTao/bfo-jsbridge-sdk.git"
     },
     "bugs": {
-        "url": "https://github.com/HuaiJiangTao/bfo-jsbridge/issues"
+        "url": "https://github.com/HuaiJiangTao/bfo-jsbridge-sdk/issues"
     },
-    "homepage": "https://github.com/HuaiJiangTao/bfo-jsbridge/blob/master/README.md",
+    "homepage": "https://github.com/HuaiJiangTao/bfo-jsbridge-sdk/blob/master/README.md",
     "readmeFilename": "README.md"
 }
