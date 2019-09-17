@@ -22,6 +22,22 @@
 
 本地构建，在根目录`dist`下生成打包压缩文件`jsbridge.js`
 
+## 使用
+
+无需初始化，直接引入即可使用。
+```
+// SG_BFO_callNativeMethod与window._SG_BFO_callNativeMethod_功能相同
+import SG_BFO_callNativeMethod from '@bfo/jsbridge';
+
+// 或
+// SG_BFO_callNativeMethod与window._SG_BFO_callNativeMethod_功能相同
+var SG_BFO_callNativeMethod = require('@bfo/jsbridge');
+
+// 或HTML标签引入根目录dist文件夹下的jsbridge.js
+<script src='fakepath/jsbridge.js'></script>
+
+```
+以上无论何种方式，都会注册一个全局方法`window._SG_BFO_callNativeMethod_`。
 ## JS SDK接口文档说明
 JS SDK会暴露一个名为`_SG_BFO_callNativeMethod_`的方法，供H5页面调用客户端。
 
